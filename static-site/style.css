@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif
+}
+
+.linkbox {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.nhk-link {
+    padding: 1em;
+    border-bottom: 1px solid #d6d6d6;
+    display: flex;
+    flex-direction: row;
+}
+
+.nhk-url {
+    flex-grow: 2;
+    line-height: 3em;
+}
+
+.nhk-score {
+    border-radius: 10em;
+    padding: 0.2em;
+    color: white;
+    width: 2.6em;
+    text-align: center;
+    line-height: 2.6em;
+}
+
+.nhk-url a {
+    color: #3f82cc !important;
+}
+
+.green {
+    background-color: #5ec176;
+}
+
+.red {
+    background-color: #de4242;
+}
+
+.blue {
+    background-color: #78d1f9;
+}

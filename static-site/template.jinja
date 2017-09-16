@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+  </head>
+  <body>
+    
+    <!--
+    This page is statically generated because there's no way I'm going to make
+    a backend for something that could be a spreadsheet.
+    -->
+    <div class="linkbox">
+
+    <h2>Level {{level}}</h2>
+      
+      {% for line in lines-%}
+      <div class="nhk-link">
+        <span class="nhk-url"><a href="{{line["url"]}}">{{line["url"]}}</a></span>
+        <span class="nhk-score {{line["color"]}}">{{line["percent"]}}%</span>
+      </div>
+      {% endfor %}
+    </div>
+    
+  </body>
+</html>
